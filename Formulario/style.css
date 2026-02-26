@@ -1,0 +1,59 @@
+.contato form {
+    margin-top: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #00c6ff;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+    box-shadow: 0 0 8px #00c6ff;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background: #00c6ff;
+    color: #0f2027;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: rgb(0, 71, 165);
+}
+
+section {
+    width: 85%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(53, 49, 49, 0.08);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(10, 27, 32, 0.3);
+}

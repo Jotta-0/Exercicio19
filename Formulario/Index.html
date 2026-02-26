@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de atendimento ao cliente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <section id="contato" class="contato">
+    <h2>Registre-se Agora</h2>
+    <p>Preencha o formulário abaixo para enviar suas informações</p>
+
+    <form id="formContato">
+
+        <div class="campo">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        </div>
+
+        <div class="campo">
+            <label for="icpf">CPF:</label>
+            <input type="text" id="icpf" name="cpf" placeholder="Digite seu CPF" required> 
+            
+        </div>
+
+        <div class="campo">
+            <label for="iaddress">Endereço:</label>
+            <input type="text" id="address" name="iaddress" placeholder="Digite seu endereço" required>
+        </div>
+
+        <div class="campo">
+            <label for="itelefone">Telefone:</label>
+            <input type="text" id="telefone" name="itelefone" placeholder="Digite seu número de telefone" required>
+        </div>
+
+        <div class="campo">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+        </div>
+
+        <div class="campo">
+            <label for="idtn">Data de nascimento:</label>
+            <input type="date" id="idtn" name="dtn" placeholder="dd/mm/aaaa" required>
+        </div>
+        
+        <div class="campo">
+            <label for="ilogin">Login:</label>
+            <input type="text" id="ilogin" name="login" placeholder="Digite seu login" required>
+        </div>
+
+        <div class="campo">
+            <label for="isenha">Senha:</label>
+            <input type="password" id="isenha" name="senha" placeholder="Digite seu senha" required>
+        </div>
+
+        <button type="submit">Resgistrar</button> 
+        <button type="reset">Limpar</button> 
+
+    </form>
+</section>
+<script>
+    const form = document.getElementById("formContato");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        alert("Seu resgistro foi arquivado! Aguarde o retorno");
+
+        form.reset();
+    });
+</script>
+
+</body>
+</html>
